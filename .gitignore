@@ -1,12 +1,18 @@
-# Ignore MinIO internal data
-**/data/minio/.minio.sys/
-**/data/minio/tmp/
-**/data/minio/multipart/
 
-# Ignore Postgres internal files
+# Ignore MinIO
+
+**/data/minio/
+**/data/minio/**
+
+
+# Ignore Postgres data directory
+
 **/data/postgres/
+**/data/postgres/**
 
-# Ignore logs & temp
-**/*.log
+
+# Ignore temp / system files
+
 **/__pycache__/
+**/*.log
 **/.DS_Store
